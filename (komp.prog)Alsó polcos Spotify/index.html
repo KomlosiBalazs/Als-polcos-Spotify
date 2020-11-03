@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Alsó polcos Spotify</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="menu">
+      <div class="menu_item">Home</div>
+      <div class="menu_item">Radio</div>
+    </div>
+    <div class="content">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="my_card">
+              <img src="nemlopott.PNG" onclick="changeMusic()" alt="">
+              <h2>Stronger</h2>
+              <h3>Prismo</h3>
+            </div>
+            <div class="my_card">
+              <img src="mystic prophecy-ravenlord.jpg" onclick='changeMusic("mystic prophecy-ravenlord.mp3")' alt="">
+              <h2>Ravenlord</h2>
+              <h3>Mystic prophecy</h3>
+            </div>
+            <div class="my_card">
+              <img src="would you love a monsterman.jpg" onclick="changeMusic()" alt="">
+              <h2>Would you love a monsterman?</h2>
+              <h3>Lordi</h3>
+            </div>
+            <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+      <div class="play">
+        <div class="music_data_holder">
+          <div id="music_img"></div>
+          <div id="actual_title">Stronger</div>
+          <div id="actual_author">Prismo</div>
+        </div>
+        <div class="controller_holder">
+          <div class="controller">
+            <img src="step-backward-solid.svg">
+            <img id="play_pause" onclick="playMusic()" src="play-circle-regular.svg">
+            <img src="step-forward-solid.svg">
+          </div>
+          <div class="player">
+            <audio id="audioPlayer">
+              <source src="Prismo - Stronger [NCS Release].mp3" type="audio/mpeg">
+            </audio>
+            <div class=time_line>
+              <div class=inner_line id="inner_line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

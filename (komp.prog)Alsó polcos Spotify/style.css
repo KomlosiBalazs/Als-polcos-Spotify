@@ -1,0 +1,148 @@
+:root{
+    --menucolor--:#181818;
+    --contentcolor--:#242424;
+    --playcolor--:#404040;
+
+}
+.main
+{
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+
+}
+.menu{
+    background-color: var( --menucolor--);
+    width: 250px;
+    height: calc(100vh - 100px);
+    float:left;
+}
+
+.content{
+    background-color: var(--contentcolor--);
+    width: calc(100% - 250px);
+    height:calc(100vh - 100px);
+    float: left;
+    padding-top: 150px; 
+
+}
+.play{
+    background-color: var(--playcolor--);
+    width: 100%;
+    height: 100px;
+    float:left;
+
+}
+.menu_item{
+    color: whitesmoke;
+    width: 80%;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    height: 30px;
+    line-height: 30px;
+}
+.menu_item:hover{
+    cursor: pointer;
+    background-color: rgb(15,15,15);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.music_data_holder{
+    width: 250px;
+    height: 100%;
+    border:1px solid white;
+    padding:10px;
+    float: left;
+
+}
+#music_img{
+    height: 80px;
+    width: 80px;
+    float: left;
+    background-image: url("nemlopott.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+
+}
+#actual_title{
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    line-height: 20px;
+
+}
+#actual_author{
+    color:rgb(180, 175, 175);
+
+}
+.controller_holder{
+    width: calc(100% - 250px);
+    height: 50%;
+    float: left;
+
+}
+.controller{
+    width: 115px;
+    height: 100%;
+    margin:auto;
+
+}
+.controller img{
+    width: 27px;
+    float: left;
+    margin: 4px;
+    margin-top: 5px;
+    filter:invert(0.8);
+}
+.controller img:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#play_pause{
+    width: 45px;
+    margin:0;
+
+}
+
+.inner_line{
+    width: 50%;
+    height: 100%;
+    background-color: greenyellow;
+}
+
+.time_line{
+    width: 500px;
+    height:20px;
+    border: 1px solid white;
+}
+
+.my_card{ 
+    width: calc(100% / 3);
+    border: 1px solid white;
+    height:300px;
+    float:left;
+    padding:20px;
+    padding-top:0px;
+}
+.my_card img{
+    width: 100%;
+    cursor: pointer;
+
+}
+.my_card h2{
+    color: white;
+    font-size:1.5em;
+
+}
+.my_card h3{
+    color:lightgrey;
+    font-size:1em;
+
+}
+
+.carousel-inner{
+    width: 80%;
+    margin:auto;
+}
